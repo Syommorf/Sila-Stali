@@ -1,0 +1,11 @@
+keystore.properties
+app/keystore/
+playstore/play-service-account*.json
+build/
+app/build/
+.gradle/
+local.properties
+*.apk
+*.aab
+.idea/
+*.iml

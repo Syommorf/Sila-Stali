@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Металл / сталь -->
+    <color name="steel_dark">#232B33</color>
+    <color name="steel">#2E3945</color>
+    <color name="steel_light">#404C59</color>
+    <color name="steel_lighter">#6B7A8A</color>
+    <color name="steel_frame">#4A5867</color>
+    <color name="rivet">#8A99A8</color>
+    <color name="rivet_dark">#5F6D7A</color>
+
+    <!-- Лазерная резка: огонь/заклёпки-искры -->
+    <color name="laser">#FF8C1A</color>
+    <color name="laser_hot">#FF5E00</color>
+    <color name="laser_glow">#FFB347</color>
+    <color name="laser_dark">#B33A00</color>
+    <color name="spark">#FFE9C4</color>
+
+    <!-- Тёмный промышленный фон -->
+    <color name="metal_bg_dark">#161C22</color>
+    <color name="metal_bg">#1C242C</color>
+    <color name="metal_bg_light">#28323C</color>
+
+    <!-- Текст на тёмном металле -->
+    <color name="text_primary">#EDF2F7</color>
+    <color name="text_secondary">#A9B7C6</color>
+    <color name="text_muted">#7A8A99</color>
+
+    <color name="green_dark">#1B5E20</color>
+    <color name="green">#2E7D32</color>
+    <color name="green_light">#4CAF50</color>
+    <color name="blue">#1565C0</color>
+    <color name="purple">#6A1B9A</color>
+    <color name="orange">#E65100</color>
+    <color name="red">#C62828</color>
+    <color name="gray">#757575</color>
+    <color name="white">#FFFFFF</color>
+    <color name="background">#1C242C</color>
+</resources>

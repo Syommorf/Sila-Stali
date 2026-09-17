@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tvHeader"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="@color/steel_dark"
+    android:padding="10dp"
+    android:paddingStart="12dp"
+    android:paddingEnd="12dp"
+    android:text="Блок"
+    android:textColor="@color/laser_glow"
+    android:textSize="13sp"
+    android:textStyle="bold" />

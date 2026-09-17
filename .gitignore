@@ -1,0 +1,42 @@
+# Build
+*.apk
+*.jar
+*.class
+*.aab
+build/
+.gradle/
+dist/
+*.exe
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# App data / secrets
+*.db
+*.db-wal
+*.db-shm
+saved.properties
+*.jks
+keystore/
+*.keystore
+
+# Logs & uploads
+*.log
+build_log.txt
+*.bak
+release.jks
+
+# Local config
+local.properties

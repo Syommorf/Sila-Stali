@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.SilaStali" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/laser</item>
+        <item name="colorPrimaryVariant">@color/laser_dark</item>
+        <item name="colorOnPrimary">@color/metal_bg_dark</item>
+        <item name="colorSecondary">@color/steel_light</item>
+        <item name="colorSecondaryVariant">@color/steel_dark</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:statusBarColor">#11161C</item>
+        <item name="android:windowBackground">@drawable/bg_metal_screen</item>
+        <item name="android:windowAnimationStyle">@style/WindowAnimations</item>
+        <item name="windowActionModeOverlay">true</item>
+    </style>
+
+    <style name="WindowAnimations">
+        <item name="android:activityOpenEnterAnimation">@anim/activity_open_enter</item>
+        <item name="android:activityOpenExitAnimation">@anim/activity_open_exit</item>
+        <item name="android:activityCloseEnterAnimation">@anim/activity_close_enter</item>
+        <item name="android:activityCloseExitAnimation">@anim/activity_close_exit</item>
+        <item name="android:taskOpenEnterAnimation">@anim/activity_open_enter</item>
+        <item name="android:taskOpenExitAnimation">@anim/activity_open_exit</item>
+        <item name="android:taskCloseEnterAnimation">@anim/activity_close_enter</item>
+        <item name="android:taskCloseExitAnimation">@anim/activity_close_exit</item>
+    </style>
+
+    <style name="Widget.SilaStali.Button.Primary" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@null</item>
+        <item name="android:background">@drawable/bg_laser_button</item>
+        <item name="android:textColor">@color/metal_bg_dark</item>
+        <item name="android:textStyle">bold</item>
+        <item name="cornerRadius">0dp</item>
+    </style>
+
+    <style name="Widget.SilaStali.Button.Steel" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@null</item>
+        <item name="android:background">@drawable/bg_steel_button</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="cornerRadius">0dp</item>
+    </style>
+
+    <style name="TextAppearance.SilaStali" parent="android:TextAppearance">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TextAppearance.SilaStali.Title" parent="TextAppearance.SilaStali">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

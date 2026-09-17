@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+
+    <application
+        android:name=".SilastaliApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Сила Стали"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SilaStali"
+        android:networkSecurityConfig="@xml/network_security_config">
+
+        <activity
+            android:name=".ui.LoginActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ui.BenderActivity" android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".ui.DetailEntryActivity" android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".ui.WorkHistoryActivity" />
+        <activity android:name=".ui.ManagerActivity" />
+        <activity android:name=".ui.AllWorksActivity" />
+        <activity android:name=".ui.StatsActivity" />
+        <activity android:name=".ui.UsersActivity" />
+        <activity android:name=".ui.AdminActivity" />
+        <activity android:name=".ui.ExportActivity" />
+        <activity android:name=".ui.ScannerActivity" />
+        <activity android:name=".ui.MyStatsActivity" />
+        <activity android:name=".ui.OrderListActivity" />
+        <activity android:name=".ui.OrderDetailActivity" />
+        <activity android:name=".ui.OrderStatsActivity" />
+        <activity android:name=".ui.ModulePlaceholderActivity" />
+        <activity android:name=".ui.BlockOrdersActivity" android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".ui.ChatListActivity" />
+        <activity android:name=".ui.ChatRoomActivity" android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".ui.NewChatActivity" android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".ui.WorkMenuActivity" />
+        <activity android:name=".ui.UploadOrderActivity" android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".ui.StaffMenuActivity" />
+
+        <service
+            android:name=".service.InvitePollService"
+            android:exported="false"
+            android:stopWithTask="false" />
+
+        <service
+            android:name=".service.ChatUnreadService"
+            android:exported="false"
+            android:stopWithTask="false" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+    </application>
+</manifest>

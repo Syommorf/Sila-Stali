@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_metal_screen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/bg_toolbar"
+            android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
+            app:titleTextColor="#FFFFFF"
+            app:navigationIconTint="#FFFFFF"
+            app:title="Панель руководителя" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_metal_card"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tvManagerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Руководитель"
+                android:textColor="@color/laser_glow"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnWork"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/bg_laser_button"
+            android:text="🛠 Управление работой"
+            android:textColor="@color/metal_bg_dark"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:icon="@android:drawable/ic_menu_agenda"
+            app:iconTint="@color/metal_bg_dark"
+            app:iconGravity="textStart" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnStaff"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_laser_button"
+            android:text="👥 Управление персоналом"
+            android:textColor="@color/metal_bg_dark"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:icon="@android:drawable/ic_menu_myplaces"
+            app:iconTint="@color/metal_bg_dark"
+            app:iconGravity="textStart" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnChat"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_steel_button"
+            android:text="💬 Чат"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            app:icon="@android:drawable/ic_dialog_email"
+            app:iconTint="@color/laser_glow"
+            app:iconGravity="textStart" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/bg_steel_button"
+            android:text="Выйти"
+            android:textColor="@color/red"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</ScrollView>
