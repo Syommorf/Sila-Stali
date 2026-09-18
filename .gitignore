@@ -1,6 +1,7 @@
 # Build
 *.apk
 *.jar
+!**/gradle/wrapper/gradle-wrapper.jar
 *.class
 *.aab
 build/
@@ -34,6 +35,8 @@ keystore/
 
 # Logs & uploads
 *.log
+*.err
+*.pid
 build_log.txt
 *.bak
 release.jks
